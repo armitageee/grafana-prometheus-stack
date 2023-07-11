@@ -8,6 +8,7 @@ git clone https://github.com/armitageee/grafana-prometheus-stack
 2. Поменять конфиг (at least `configs/alertmanager.yml` для уведомлений в тг боте)
 3. Deploy stack
 ```bash
+docker swarm init
 docker stack deploy -c grafana-docker-stack/docker-compose.yml monitoring
 ```
 
