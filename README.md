@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # grafana-docker-stack
 
 Для деплоя Grafana, Prometheus и Node Exporter, нам понадобится:
@@ -28,7 +27,3 @@ docker-compose up
 ```bash
 docker ps | grep prometheus | awk '{print $1}' | xargs docker kill -s SIGHUP
 ```
-=======
-# grafana-prometheus-stack
-practise
->>>>>>> 38e41b5 (Initial commit)
