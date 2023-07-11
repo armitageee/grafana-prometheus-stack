@@ -18,8 +18,10 @@ docker stack deploy -c grafana-docker-stack/docker-compose.yml monitoring
 git clone https://github.com/armitageee/grafana-prometheus-stack
 
 ```
-Переименовать node-exporter.yml в docker-compose.yml и запустить с помощью:
+Перейти в ветку node-exporter и запустить docker-compose файл::
 ```bash
+git checkout node-exporter
+cd node-exporter
 docker-compose up 
 ```
 2. Добавить хосты в файле  `configs/prometheus/prometheus.yml` в `- targets: ['node-exporter:9100']` список jobs `- job_name: 'node-exporter'` как здесь: `- targets: ['node-exporter:9100', 'server1:9100', 'server2:9100', '...']`
